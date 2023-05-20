@@ -404,9 +404,10 @@ body{
         font-size: 30px;
     }
     .nav-items{
-        height: 455px;
+        height: 460px;
         width: 100%;
-        background-color: rgb(63, 30, 0);
+        background-color: rgba(0, 0, 0, 0.89);
+        backdrop-filter: blur(8px);
         position: fixed;
         left: -100%;
         top: 75px;
@@ -414,12 +415,12 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 30px;
+        gap: 70px;
         transition: all 0.3s ease 0s;
     }
     .header .nav-items a{
-        font-size: 20px;
-        color: rgb(252, 200, 87);
+        font-size: 15px;
+        color: rgb(255, 224, 157);
     }
     #check:checked ~ .nav-items{
         left: 0;
