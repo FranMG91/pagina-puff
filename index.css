@@ -16,7 +16,6 @@ body{
 
 /*NAV BAR*/
 .header{
-    background-color: rgb(240, 184, 0);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,7 +64,7 @@ body{
 .header .nav-items a{
     font-size: 15px;
     font-weight: 700;
-    color: rgb(112, 61, 3);
+    color: rgb(75, 40, 0);
     text-decoration: none;
 
 }
@@ -98,7 +97,7 @@ body{
 
 .check-btn{
     font-size: 30px;
-    color: rgb(80, 47, 4);
+    color: rgb(255, 255, 255);
     display: none;
     cursor: pointer;
 }
@@ -115,7 +114,8 @@ body{
 .portada{
     height: 800px;
     width: 100%;
-    background-image: url(./Seccion/banner-section.jpg);
+    background: rgb(167,121,45);
+    background: linear-gradient(180deg, rgba(167,121,45,1) 0%, rgba(205,178,99,1) 20%, rgba(238,232,214,1) 51%, rgba(255,255,255,1) 100%);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -185,20 +185,20 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(41, 16, 0);
+    background-color: rgb(255, 132, 0);
     height: 500px;
     width: 100%;
 }
 
 
 .info-nosotros h2{
-    color: antiquewhite;
+    color: rgb(0, 0, 0);
     margin-bottom: 40px;
 }
 
 
 .info-nosotros p{
-    color: antiquewhite;
+    color: rgb(32, 32, 32);
     text-align: center;
 }
 
@@ -207,13 +207,14 @@ body{
 /*NUESTROS SERVICIOS*/
 .cards{
     width: 100%;
-    height: 800px;
-    background-color: rgb(24, 8, 0);
+    height: auto;
+    background-color:rgb(79, 32, 13);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
+    padding: 30px;
 }
 
 .card-info{
@@ -278,7 +279,7 @@ body{
 /* footer */
 .pie_pagina{
     width: 100%;
-    background-color: rgb(170, 91, 0);
+    background:rgb(193 122 16)
 
 }
 
@@ -375,7 +376,13 @@ body{
         height: 40px;
         
     }
-
+    .cards{
+        flex-wrap: nowrap;
+        display: flex;
+        align-items: center;
+        padding: 20px 20px;
+    }
+    
 
 
 }
@@ -386,6 +393,10 @@ body{
 
 /*RESPONSIVE CELULAR*/
 @media (max-width: 768px){
+    .header{
+        width: 100%;
+        height: 70px;
+    }
     .header .btn{
         display: none;
 
@@ -404,13 +415,13 @@ body{
         font-size: 30px;
     }
     .nav-items{
-        height: 460px;
+        height: 482px;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.89);
+        background-color: rgba(0, 0, 0, 0.678);
         backdrop-filter: blur(8px);
         position: fixed;
         left: -100%;
-        top: 75px;
+        top: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -420,7 +431,7 @@ body{
     }
     .header .nav-items a{
         font-size: 15px;
-        color: rgb(255, 224, 157);
+        color: rgb(255, 255, 255);
     }
     #check:checked ~ .nav-items{
         left: 0;
@@ -448,17 +459,18 @@ body{
     }
     .portada .eslogan-info{
         width: 100%;
-        margin: 10px;
+        margin: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+
     }
     .eslogan-info h1{
         font-size: 40px;
         text-align: center;
         font-weight: 500;
-        color: black;
+        color: rgb(79, 32, 13)
     }
     .eslogan-info p{
         font-size: 20px;
@@ -483,7 +495,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgb(26, 26, 26);
+        background-color: rgb(79, 32, 13);
         flex-wrap: wrap; 
         padding: 0px;   
     }
@@ -491,6 +503,7 @@ body{
         font-size: 30px;
         margin: 41px 0 0 0;
         margin-left: 50px;
+        color: white;
     }
     .info-nosotros p{
         overflow: hidden;
@@ -499,6 +512,7 @@ body{
         flex-wrap: wrap;
         text-align:start;  
         padding: 25px;
+        color: rgb(218, 218, 218);
     }
 
 
@@ -508,6 +522,8 @@ body{
         padding-top: 0px;
         width: 100%;
         height: auto;
+        flex-wrap: wrap;
+        padding: 0px;
         
     }
 
@@ -530,19 +546,21 @@ body{
 
 
     /* FOOTER */
+    .pie_pagina{
+        background-color: rgb(193 122 16);
+    }
     .pie_pagina .grupo1{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
-        background-color: rgb(255, 153, 0);
     }
     .box{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: rgb(255, 153, 0);
+        background-color: rgb(193 122 16);
     }
     .pie_pagina .grupo1 .box figure img{
         height: 80px;
